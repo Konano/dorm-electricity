@@ -92,3 +92,5 @@ balance = float(balance)
 if balance < 20:
     text = f'Need to recharge the electricity bill. The electricity bill now is {balance} kilowatt.'
     sendMessage(config['BOT']['token'], text, config['BOT']['owner'])
+
+requests.get(config['BOT']['push'] + str(balance))
