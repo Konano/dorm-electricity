@@ -14,7 +14,7 @@ from basic import (add_file_handler, archive, config, db, eprint, heartbeat,
 
 add_file_handler('./log/dorm.log')
 
-HEARTBEAT_SERVER = 'https://alert.nano.ac/api/push/hKvmAorWb1?msg=OK&ping='
+HEARTBEAT_SERVER = config['MYHOME']['heartbeat']
 
 # session
 session = requests.session()
