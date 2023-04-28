@@ -55,7 +55,7 @@ def run():
         points = [
             {"measurement": "dorm", "tags": {"type": "electricity"}, "fields": {
                 "balance": balance
-            }},
+            }}
         ]
         if not db.write_points(points, database='personal'):
             raise Exception('db.write_points failed')

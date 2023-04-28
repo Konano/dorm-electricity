@@ -55,7 +55,7 @@ def add_file_handler(filename):
 
 
 # dbClient
-db = InfluxDBClient(host='localhost', port=8086,
+db = InfluxDBClient(host=config['DB'].get('host'), port=8086,
                     username=config['DB'].get('username'),
                     password=config['DB'].get('password'))
 
